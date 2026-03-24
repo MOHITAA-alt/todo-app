@@ -1,0 +1,84 @@
+body {
+  font-family: Arial;
+  background: linear-gradient(120deg, #74ebd5, #ACB6E5);
+  margin: 0;
+  padding: 20px;
+}
+
+/* Center container */
+.container {
+  background: white;
+  padding: 20px;
+  width: 370px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  margin: auto;
+  text-align: center;
+}
+
+/* Inputs */
+input {
+  padding: 10px;
+  width: 70%;
+  margin: 5px;
+}
+
+/* Buttons */
+button {
+  padding: 8px;
+  margin: 5px;
+  border: none;
+  background: #4CAF50;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #45a049;
+}
+
+/* Task list scroll fix */
+#taskList {
+  max-height: 300px;
+  overflow-y: auto;
+  padding: 0;
+}
+
+/* Task item */
+li {
+  background: #f9f9f9;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Completed */
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* Top section */
+.task-top {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Dark mode */
+.dark {
+  background: #222;
+}
+
+.dark .container {
+  background: #333;
+  color: white;
+}
+
+.dark li {
+  background: #444;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Advanced To-Do App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>To-Do List</h1>
+
+  <input type="text" id="taskInput" placeholder="Enter task">
+  <button onclick="addTask()">Add</button>
+  <button onclick="clearAll()">Clear All</button>
+  <button onclick="toggleDarkMode()">Dark Mode</button>
+
+  <br><br>
+
+  <input type="text" id="search" placeholder="Search..." onkeyup="searchTask()">
+
+  <p id="count">Total: 0 | Completed: 0</p>
+
+  <ul id="taskList"></ul>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
